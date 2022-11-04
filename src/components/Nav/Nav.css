@@ -1,0 +1,20 @@
+.navBar{
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #211E4A;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}   
+#logo-15{
+    margin-left: 20px;
+}
+.list-menu{
+    display: flex;
+    margin: 30px 50px;
+    list-style: none;
+}

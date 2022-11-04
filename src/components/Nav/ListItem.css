@@ -1,0 +1,11 @@
+.item-menu {
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.item-menu:hover {
+  color: #9dcf52;
+  font-weight: 600;
+}
