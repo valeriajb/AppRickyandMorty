@@ -1,11 +1,15 @@
 .item-menu {
-  margin-left: 20px;
-  font-size: 20px;
+  list-style: none;
+  padding: 0px 20px;
+  font-size: 1.3rem;
   color: white;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .item-menu:hover {
   color: #9dcf52;
-  font-weight: 600;
+}
+.item-menu.active{ 
+  margin-bottom: 15px;
 }

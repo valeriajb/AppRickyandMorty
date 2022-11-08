@@ -1,20 +1,50 @@
-.navBar{
-    position: fixed;
-    width: 100vw;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #211E4A;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}   
-#logo-15{
-    margin-left: 20px;
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #211e4a;
+  padding: 20px 80px;
 }
-.list-menu{
-    display: flex;
-    margin: 30px 50px;
-    list-style: none;
+
+.list-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile {
+  display: none;
+}
+
+
+
+@media screen and (max-width:769px) {
+    .mobile{
+      display: block;
+      
+    }
+    .fas {
+      color: white;
+      font-size: 30px;
+    }
+    
+  
+    .list-menu {
+      display: block;
+      position: absolute;
+      top: 92px;
+      right: 0px;
+      background-color: #211e4a;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0px 30px;
+      height: 100vh;
+      
+    }
+    .list-menu.active{
+      display: none;
+    }
+    
+    
 }

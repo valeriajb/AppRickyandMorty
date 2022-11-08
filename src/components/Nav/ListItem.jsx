@@ -1,9 +1,10 @@
 import React from "react";
 import "./ListItem.css";
-function ListItem({ item }) {
+function ListItem({ item, stateMenu}) {
+  const {key,src,title}=item;
   return (
-    <a key={item.key} href="#" className="item-menu">
-      {item.title}
+    <a key={key} href="#" className={"item-menu "+ (stateMenu && "active")}>
+      {title}
     </a>
   );
 }
