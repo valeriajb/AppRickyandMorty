@@ -1,0 +1,21 @@
+.container-resume{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Responsive Navbar */
+@media screen and (max-width: 710px) {
+    .container-resume{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-container{
+        font-size: 30px;
+        text-align: center;
+       
+    }
+    .text-container{
+        font-size: 20px;
+    }
+}

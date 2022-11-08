@@ -1,0 +1,24 @@
+.container-slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+.slider-items{
+    display: flex;
+    overflow-x: hidden;
+    width: 100vw;
+
+}
+.slider-img{
+    width:100%;
+}
+
+.bar-slider{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

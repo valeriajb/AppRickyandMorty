@@ -41,13 +41,13 @@ function Nav() {
         </svg>
       </a>
 
-      <ul className={"list-menu " + (stateMenu === false && "active")}>
+      <ul className={"list-menu " + (stateMenu && "active")}>
         {listNav.map((item) => (
           <ListItem item={item} stateMenu={stateMenu} />
         ))}
       </ul>
       <div className="mobile" onClick={changeStateMenu}>
-        <i className={stateMenu === false ? "fas fa-bars" : "fas fa-times"}></i>
+        <i className={stateMenu? "fas fa-times" : "fas fa-bars"}></i>
       </div>
     </nav>
   );
