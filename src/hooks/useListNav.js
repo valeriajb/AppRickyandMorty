@@ -2,17 +2,17 @@ import { useState } from "react";
 
 const ListNav = [
   {
-    key: 1,
+    id: 1,
     title: "Personajes",
     url: "",
   },
   {
-    key: 2,
+    id: 2,
     title: "Capítulos",
     url: "",
   },
   {
-    key: 3,
+    id: 3,
     title: "Planes",
     url: "",
   },
