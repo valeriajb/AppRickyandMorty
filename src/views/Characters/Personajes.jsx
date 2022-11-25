@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect} from "react";
 import CardResult from "../../components/CardResult/CardResult";
-import { useListObject, initialUrl} from "../../hooks/useListObject";
+import {useListObject} from '../../hooks/useListObject'
 import ButonsPagination from "../../components/ButonsPagination/ButonPagination";
 import "./Personajes.css";
 function Personajes() {
-  const { listObject, page, setPage } = useListObject(initialUrl);
-  
+    const{listObject,page,getData,onPrev,onNext}=useListObject()
+    const initialUrl = "https://rickandmortyapi.com/api/character";
 
-
+  useEffect(() => {
+    getData(initialUrl);
+  }, []);
   return (
     <div className="container-personajes">
       <ul className="list-character">
@@ -24,7 +26,8 @@ function Personajes() {
         anterior={page.prev}
         siguiente={page.next}
         page={page}
-        
+        onPrev={onPrev}
+        onNext={onNext}
       />
     </div>
   );

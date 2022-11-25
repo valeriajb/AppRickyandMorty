@@ -1,10 +1,12 @@
 import React from 'react'
 
-function ButonPagination({anterior,siguiente,prev,next}) {
+function ButonPagination({anterior,siguiente,onPrev,onNext}) {
+
   return (
+    
     <div>
-        {anterior?<button onClick={prev}>Anterior</button>:null}
-        {siguiente?<button onClick={next}>Siguiente</button>:null}
+        {anterior?<button onClick={onPrev}>Anterior</button>:null}
+        {siguiente?<button onClick={onNext}>Siguiente</button>:null}
         
     </div>
   )

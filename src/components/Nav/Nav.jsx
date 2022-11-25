@@ -1,5 +1,6 @@
 import React from "react";
 import useListNav from "../../hooks/useListNav";
+import { Link} from "react-router-dom";
 import { useMenuNav } from "../../hooks/useMenuNav";
 import ListItem from "./ListItem";
 import "./Nav.css";
@@ -8,7 +9,7 @@ function Nav() {
   const { stateMenu, changeStateMenu } = useMenuNav();
   return (
     <nav className="navBar">
-      <a href="index.html">
+      <Link to="/">
         <svg
           id="logo-15"
           width="49"
@@ -39,15 +40,19 @@ function Nav() {
             fill="#17CF97"
           ></path>{" "}
         </svg>
-      </a>
+      </Link>
 
       <ul className={"list-menu " + (stateMenu && "active")}>
         {listNav.map((item) => (
-          <ListItem key={item.id} title={item.title} stateMenu={stateMenu} />
+          <ListItem 
+          key={item.id} 
+          title={item.title} 
+          src={item.url}
+          stateMenu={stateMenu} />
         ))}
       </ul>
       <div className="mobile" onClick={changeStateMenu}>
-        <i className={stateMenu? "fas fa-times" : "fas fa-bars"}></i>
+        <i className={stateMenu ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
     </nav>
   );

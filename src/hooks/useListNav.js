@@ -4,17 +4,17 @@ const ListNav = [
   {
     id: 1,
     title: "Personajes",
-    url: "",
+    url: "/Personajes",
   },
   {
     id: 2,
     title: "Capítulos",
-    url: "",
+    url: "/Capitulos",
   },
   {
     id: 3,
     title: "Planes",
-    url: "",
+    url: "/Planes",
   },
 ];
 

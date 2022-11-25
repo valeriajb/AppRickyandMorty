@@ -1,17 +1,24 @@
-import { useState } from "react";
-export const initialUrl="https://rickandmortyapi.com/api/character"
-export function useListObject(url) {
+import React, { useEffect, useState } from "react";
+
+export function useListObject() {
   const [listObject, setListObject] = useState([]);
   const [page, setPage] = useState([]);
 
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      setListObject(data.results); setPage(data.info);
-    })
-    .catch((error) => console.log(error));
+  const getData = (url) => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setListObject(data.results);
+        setPage(data.info);
+      })
+      .catch((error) => console.log(error));
+  };
 
-  return { listObject,page,setPage}
-
+  const onPrev = () => {
+    getData(page.prev);
+  };
+  const onNext = () => {
+    getData(page.next);
+  };
+  return { listObject, page, getData, onPrev, onNext };
 }
-

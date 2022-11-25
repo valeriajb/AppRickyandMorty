@@ -64,6 +64,6 @@ export function useListSlider() {
   const [listImgSlider, setListImgSlider] = useState(ListImgSlider);
   const [listBarSlider, setlistBarSlider]=useState(ListBarSlider)
   const [changeImg,setChangeImg]=useState()
-  const  [stateBar, setStateBar]=useState()
+  const  [stateBar, setStateBar]=useState(0)
   return { listImgSlider, listBarSlider,stateBar, setStateBar,changeImg,setChangeImg};
 }
