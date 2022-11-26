@@ -1,9 +1,9 @@
 import React from "react";
 import './CardResult.css'
-function CardResult({name,species,image}) {
+function CardResult({title,name,species,image}) {
   return (
     <li className="card-item">
-      <img src={image}></img>
+      {image?<img src={image}></img>:<h1>{title}</h1>}
       <h2>{name}</h2>
       <p>{species}</p>
     </li>

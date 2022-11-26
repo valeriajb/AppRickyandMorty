@@ -1,4 +1,7 @@
 import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
+
 import useListNav from "../../hooks/useListNav";
 import { Link} from "react-router-dom";
 import { useMenuNav } from "../../hooks/useMenuNav";
@@ -52,7 +55,7 @@ function Nav() {
         ))}
       </ul>
       <div className="mobile" onClick={changeStateMenu}>
-        <i className={stateMenu ? "fas fa-times" : "fas fa-bars"}></i>
+         {stateMenu?<IoCloseSharp className="fas"/>:<GiHamburgerMenu className="fas" />}
       </div>
     </nav>
   );

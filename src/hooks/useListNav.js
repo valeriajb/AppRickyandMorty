@@ -9,7 +9,7 @@ const ListNav = [
   {
     id: 2,
     title: "Capítulos",
-    url: "/Capitulos",
+    url: "/Episodies",
   },
   {
     id: 3,

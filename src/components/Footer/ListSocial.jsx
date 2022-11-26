@@ -1,13 +1,13 @@
 import React from 'react'
+import { FaFacebookSquare,FaInstagram,FaYoutube } from "react-icons/fa";
 import './ListSocial.css'
 
 function ListSocial() {
   return (
     <div className='social-container'>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-youtube"></i>
+        <FaFacebookSquare className='fa-brands'/>
+        <FaInstagram className='fa-brands'/>
+        <FaYoutube className='fa-brands'/>
     </div>
   )
 }

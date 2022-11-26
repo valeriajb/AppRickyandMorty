@@ -1,0 +1,25 @@
+.container-pagination{ 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.btn{ 
+    border-style: none;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #9DCF52;
+    color: white;
+
+}
+.number-span{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0px 15px;
+    width: 30px;
+}
+.btn:hover{
+    background-color: #211E4A ;
+}

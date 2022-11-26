@@ -1,0 +1,22 @@
+.container-character{
+    margin: 0;
+}
+.list-character{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media screen and (max-width: 710px) {
+    .list-character{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+}
+@media screen and (max-width: 895px) {
+    .list-character{
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+}
