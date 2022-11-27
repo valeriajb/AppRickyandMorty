@@ -1,24 +1,10 @@
 .container-slider{
-    position: relative;
-    display: flex;
-    flex-direction: column;
- 
-
-}
-
-.slider-items{
-    display: flex;
-    overflow-x: hidden;
+    margin: 0;
     width: 100vw;
-
-}
-.slider-img{
-    width:100%;
+    display:flex ;
 }
 
-.bar-slider{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.container-slider img{
+    width: 100%;
 }
+

@@ -5,13 +5,15 @@ function Slider() {
   const { listImgSlider } = useListSlider();
 
   return (
-    <ul>
-      {listImgSlider.map((item) => (
-        <div key={item.id}>
-          <img src={item.img} />
-        </div>
-      ))}
-    </ul>
+    <div className="container-wrap">
+      <ul className="container-slider">
+        {listImgSlider.map((item) => (
+          <div key={item.id}>
+            <img src={item.img} />
+          </div>
+        ))}
+      </ul>
+    </div>
   );
 }
 

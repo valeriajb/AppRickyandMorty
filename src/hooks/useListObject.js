@@ -8,7 +8,7 @@ export function useListObject() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        setListObject(data.results);
+        setListObject(data.results); //Es necesario colocar (;) y estar entre llaves cuando se està devolviendo varios estados en la promesa
         setPage(data.info);
       })
       .catch((error) => console.log(error));

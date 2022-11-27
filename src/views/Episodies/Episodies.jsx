@@ -21,7 +21,7 @@ function Episodies() {
             key={item.id}
             title={item.name}
             name={item.episode}
-            species={item.created}
+            description={item.created}
           />
         ))}
       </ul>
